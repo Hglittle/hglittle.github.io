@@ -1,0 +1,153 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0.2em;
+    font-size: 2.2em;
+}
+
+header p {
+    margin-top: 0.5em;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    float: right;
+    margin-right: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+/* Section Titles */
+h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+/* Card Styles */
+.services-list, .pricing-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.card {
+    background-color: #fff;
+    padding: 1.5em;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    cursor: pointer;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.card p {
+    font-size: 1em;
+    margin: 0.5em 0;
+}
+
+.card .more-info {
+    display: none;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 1em;
+    line-height: 1.4;
+}
+
+/* Hover and Click Animation */
+.card:hover,
+.card.expanded {
+    transform: scale(1.05);
+    background-color: #333;
+    color: #fff;
+}
+
+.card:hover .more-info,
+.card.expanded .more-info {
+    display: block;
+}
+
+.card:hover h3,
+.card.expanded h3,
+.card:hover p,
+.card.expanded p {
+    color: #fff;
+}
+
+/* Button */
+.btn {
+    background-color: #333;
+    color: #fff;
+    padding: 0.7em 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Contact Form */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.contact label {
+    font-weight: bold;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+/* Footer */
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}

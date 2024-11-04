@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameSprout Media</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="images/LOGO.PNG" alt="GameSprout Media Logo">
+        </div>
+        <h1>GameSprout Media</h1>
+        <p>Your Partner in Social Media Success</p>
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="container">
+
+        <!-- Services Section -->
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="services-list">
+                <div class="card">
+                    <h3>Content Creation</h3>
+                    <p>Custom graphics, video, and written content designed to engage your audience and grow your following.</p>
+                </div>
+                <div class="card">
+                    <h3>Account Management</h3>
+                    <p>End-to-end management of your social media profiles, including posting, engagement, and growth tracking.</p>
+                </div>
+                <div class="card">
+                    <h3>Social Strategy</h3>
+                    <p>Developing a unique social media strategy tailored to your brand's goals, audience, and resources.</p>
+                </div>
+                <div class="card">
+                    <h3>SEO Optimization</h3>
+                    <p>Optimizing your content for search to ensure higher visibility and reach on social platforms.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing">
+            <h2>Pricing</h2>
+            <div class="pricing-list">
+                <div class="card" onclick="this.classList.toggle('expanded')">
+                    <h3>Basic Package</h3>
+                    <p>3 posts per week + monthly engagement report</p>
+                    <p><strong>$150/month</strong></p>
+                    <div class="more-info">
+                        <p>Perfect for small businesses needing a consistent social presence. Includes a monthly engagement report to track growth.</p>
+                    </div>
+                </div>
+                <div class="card" onclick="this.classList.toggle('expanded')">
+                    <h3>Standard Package</h3>
+                    <p>Daily posts + weekly analytics + monthly strategy review</p>
+                    <p><strong>$500/month</strong></p>
+                    <div class="more-info">
+                        <p>Our most popular option! Includes daily posts, weekly performance reports, and a monthly strategy review to ensure growth.</p>
+                    </div>
+                </div>
+                <div class="card" onclick="this.classList.toggle('expanded')">
+                    <h3>Premium Package</h3>
+                    <p>Custom content, daily posts, full account management, and bi-weekly analytics reports</p>
+                    <p><strong>$1,000/month</strong></p>
+                    <div class="more-info">
+                        <p>For businesses wanting a fully managed experience. Custom content, in-depth analytics, and complete account management.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Ready to grow your brand’s social presence? Get in touch with us!</p>
+            <form action="contact.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit" class="btn">Send Message</button>
+</form>
+
+        </section>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 GameSprout Media. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
